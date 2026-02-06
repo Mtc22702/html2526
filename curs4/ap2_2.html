@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Smartphones (portrait and landascape) -----*/
+      @media (max-width: 640px) {
+        .mob {
+          display: block;
+          background-image: url("mob.jpg");
+          background-size: contain;
+        }
+        div:not(.mob) {
+          display: none;
+        }
+      }
+
+      /* Tablet (portrait and landascape) -----*/
+      @media (min-width: 641px) and (max-width: 768px) {
+        .tab {
+          display: block;
+          background-image: url("tablet.jpg");
+          background-size: contain;
+        }
+        div:not(.tab) {
+          display: none;
+        }
+      }
+      /* Laptops -----*/
+      @media (min-width: 769px) and (max-width: 1223px) {
+        .lap {
+          display: block;
+          background-image: url("laptop.jpg");
+          background-size: contain;
+        }
+        div:not(.lap) {
+          display: none;
+        }
+      }
+      /* Desktop Large-----*/
+      @media (min-width: 1224px) {
+        .des {
+          display: block;
+          background-image: url("design.jpg");
+          width: 100%;
+          max-width: 800px;
+          height: auto;
+        }
+        div:not(.des) {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="des">
+      <h1>Suntem pe Desktop</h1>
+    </div>
+    <div class="lap">
+      <h1>Suntem pe Laptop</h1>
+    </div>
+    <div class="tab">
+      <h1>Suntem pe Tableta</h1>
+    </div>
+    <div class="mob">
+      <h1>Suntem pe Mobil</h1>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .mob,
+      .tab,
+      .lap,
+      .des {
+        display: none;
+      }
+      /* Smartphones (portrait and landascape) -----*/
+      @media (max-width: 640px) {
+        .mob {
+          display: block;
+        }
+      }
+
+      /* Tablet (portrait and landascape) -----*/
+      @media (min-width: 641px) and (max-width: 768px) {
+        .tab {
+          display: block;
+        }
+      }
+      /* Desktops and laptops -----*/
+      @media (min-width: 769px) and (max-width: 1223px) {
+        .lap {
+          display: block;
+        }
+      }
+      /* Large screens -----*/
+      @media (min-width: 1224px) {
+        .des {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="des">
+      <h1>Suntem pe Desktop</h1>
+      <img src="design.jpg" width="100%" alt="" />
+    </div>
+    <div class="lap">
+      <h1>Suntem pe Laptop</h1>
+      <img src="laptop.jpg" width="100%" alt="" />
+    </div>
+    <div class="tab">
+      <h1>Suntem pe Tableta</h1>
+      <img src="tablet.jpg" width="100%" alt="" />
+    </div>
+    <div class="mob">
+      <h1>Suntem pe Mobil</h1>
+      <img src="mob.jpg" width="100%" alt="" />
+    </div>
+  </body>
+</html>
