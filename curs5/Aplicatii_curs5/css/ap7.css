@@ -1,11 +1,11 @@
 body {
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 15px;
 }
 
 nav {
   background-color: #284554;
-  height: 44px;
+  height: 38px;
 }
 
 nav > ul {
@@ -58,6 +58,7 @@ nav > ul > li:hover > ul.submeniu {
   clear: both;
   margin-top: 10px;
   position: absolute;
+  z-index: 99;
   width: 160px;
 }
 
